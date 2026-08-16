@@ -3,8 +3,19 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/STaiMIC/foundations-training)
 [![nf-core](https://img.shields.io/badge/nf--core-sarek%2Fampliseq-brightgreen)](https://nf-co.re) [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A526.04-blue)](https://www.nextflow.io/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**A conceptual and practical checkpoint for the STaiMIC Nextflow Training Program**
+**A conceptual and practical checkpoint for the STaiMIC Training Program Using Nextflow**
 *From Biological Question to Nextflow Execution: Foundations for Independent Workflow Building*
+## Independent training and affiliation notice
+
+This educational programme was independently designed and delivered by STaiMIC. Its curriculum is informed by open Nextflow and nf-core community practices and uses the open-source Nextflow workflow system and selected nf-core resources for teaching and demonstration.
+
+This is **not** an official Seqera, Nextflow, or nf-core course, training session, certification, or product. It is not sponsored, endorsed, reviewed, or certified by Seqera or the nf-core community.
+
+Any instructor’s status as a Nextflow Ambassador is an individual community role and does not imply that Seqera, Nextflow, or nf-core delivers or endorses this STaiMIC programme. Third-party names and marks are used solely for identification and attribution.
+
+## Licensing and third-party material
+
+Original STaiMIC material and code in this repository is released under the [MIT License](LICENSE). Nextflow is separate open-source software released under the Apache License 2.0. Reused or adapted nf-core material remains subject to its original MIT licence and copyright notices. The STaiMIC licence does not replace or relicense third-party material.
 
 ---
 

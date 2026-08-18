@@ -56,8 +56,8 @@ This session reuses the real samplesheet formats from Session 1 (sarek) and Sess
 | patientX | XX | 0 | normal_sample | L001 | fastq/normal_1.fastq.gz | fastq/normal_2.fastq.gz |
 | patientX | XX | 1 | tumor_sample | L001 | fastq/tumor_1.fastq.gz | fastq/tumor_2.fastq.gz |
 
-> Why compare both formats?
-> Sarek needs `patient`, `sex`, `status`, and `lane` because somatic variant calling requires pairing tumor and normal samples from the same patient. Ampliseq only needs `sampleID` and read paths because 16S profiling doesn't require that pairing. Different biological questions require capturing different metadata — this is the Biology layer in practice.
+> **Why compare both formats?**
+> Sarek requires `patient` and `sample`, which link multiple samples back to one individual. `lane` is required for FASTQ input and carries the technical read group, so reads from different lanes are tracked and merged correctly. `sex` and `status` are optional: `sex` informs sex chromosome handling, and `status` marks normal (0) or tumour (1), defaulting to 0. Sarek is not restricted to paired somatic analysis, so these columns exist to support tumour/normal pairing when the question needs it, not because pairing is mandatory. Ampliseq needs only `sampleID` and read paths because 16S profiling has no such relationships to track. Different biological questions require different metadata. That is the Biology layer in practice.
 
 ## What you'll learn
 

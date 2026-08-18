@@ -36,7 +36,7 @@ Identify:
 
 ## Step 4 — Examine the synthetic samplesheets (5 min)
 
-Open `data/microbiome_samplesheet.csv`, `data/microbiome_metadata.tsv`, and `data/cancer_samplesheet.csv`.
+Open `minimal-workflow/data/microbiome_samplesheet.csv`, `minimal-workflow/data/microbiome_metadata.tsv`, and `minimal-workflow/data/cancer_samplesheet.csv`.
 
 Before running anything, answer: what does each column represent? Why does the cancer samplesheet need `patient`, `sex`, `status`, and `lane`, while the microbiome one only needs `sampleID` and read paths?
 
@@ -63,7 +63,7 @@ cat results/gut_2.count.txt
 
 ---
 
-## Step 7 — Reproduce it cleanly (10 min)
+## Step 7 — Check consistency across cached and clean runs (10 min)
 
 ```bash
 nextflow run minimal-workflow/main.nf -resume
@@ -76,7 +76,7 @@ rm -rf work/
 nextflow run minimal-workflow/main.nf
 ```
 
-**Discussion:** Compare the two runs. What stayed the same? What could differ, even though both are "correct"? (Connects to Misconception #3.)
+**Discussion:** Does re-running the same workflow give a consistent result, whether cached or clean? This is about caching and determinism on a single machine — not the same claim as reproducibility across different machines (Misconception #3), which is a separate, stronger guarantee.
 
 ---
 
